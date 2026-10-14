@@ -1,0 +1,52 @@
+# Python environments, bytecode, and generated packages
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+/build/
+/dist/
+backend/build/
+backend/dist/
+
+# Test, lint, and dependency caches
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.cache/
+.coverage
+.coverage.*
+htmlcov/
+coverage.xml
+
+# Local configuration and credentials
+.env
+.env.*
+!.env.example
+!.env.*.example
+.aws/
+*.pem
+*.key
+
+# Local data and logs
+*.log
+*.sqlite
+*.sqlite3
+
+# Frontend artifacts (when added)
+node_modules/
+.next/
+
+# Terraform local state (when added)
+.terraform/
+*.tfstate
+*.tfstate.*
+*.tfvars
+*.tfvars.json
+!*.tfvars.example
+
+# OS and editor local files
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
