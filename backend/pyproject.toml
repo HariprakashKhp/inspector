@@ -4,8 +4,12 @@ version = "0.1.0"
 description = "Learning backend for the AI incident investigator"
 requires-python = ">=3.12"
 dependencies = [
+    "alembic>=1.14,<2",
     "fastapi>=0.115,<1",
+    "psycopg[binary]>=3.2,<4",
     "pydantic>=2.13,<3",
+    "python-dotenv>=1.0,<2",
+    "sqlalchemy>=2.0,<2.1",
     "uvicorn>=0.30,<1",
 ]
 

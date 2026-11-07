@@ -1,4 +1,4 @@
-"""Incident input and output contracts; persistence is added separately."""
+"""Incident HTTP contracts, separate from database table mappings."""
 
 from enum import StrEnum
 from uuid import UUID
@@ -30,3 +30,12 @@ class IncidentResponse(IncidentCreate):
 
     id: UUID
     created_at: AwareDatetime
+
+
+class IncidentPage(BaseModel):
+    """A bounded page; has_more is determined by fetching one extra row."""
+
+    items: list[IncidentResponse]
+    limit: int
+    offset: int
+    has_more: bool
